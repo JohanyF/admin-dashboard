@@ -14,13 +14,19 @@
 
 .features {
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center;
-    align-items: center; */
-    /* maybe change justify-item to start */
+    
 }
 
 .search-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 9fr;
+}
+
+input {
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 1rem;
+    padding: 9px;
+    min-width: 36vw;
 }
 
 .profile-section,
@@ -30,8 +36,37 @@
     align-items: center;
 }
 
+.btns {
+    gap: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.75rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
 .greeting {
     grid-template-columns: 1fr 1fr;
+    justify-self: start;
+}
+
+.magnify {
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.bell {
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.account {
+    max-height: 80%;
+    max-width: 80%;
 }
 
 .grid {
@@ -42,10 +77,3 @@
     justify-items: center;
     align-items: center;
 }
-
-.sc {
-    justify-items: start;
-    align-items: center;
-}
-
-/* Write some classes that makes you rewrite some css code like sen in features, search-section, profile-section and btns */
