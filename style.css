@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -69,6 +75,24 @@ input {
     max-width: 80%;
 }
 
+.article {
+    grid-template-columns: 3fr 1fr;
+}
+
+.card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    padding: 2rem 1.5rem;
+    box-shadow: 4px 4px 6px 0px rgba(51, 51, 51, 0.8);
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-rows: 0fr 13rem 1fr;
+}
+
 .grid {
     display: grid;
 }
@@ -77,3 +101,19 @@ input {
     justify-items: center;
     align-items: center;
 }
+
+.icons {
+    max-width: max-content;
+    justify-self: end;
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-icon {
+    width: 1.5rem;
+}
+
