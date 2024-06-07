@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
+    min-height: 100vh;
 }
 
 .header {
@@ -76,7 +77,7 @@ input {
 }
 
 .article {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 2rem;
     padding: 2rem;
 }
@@ -92,7 +93,7 @@ input {
     border-radius: 1rem;
 
     display: grid;
-    grid-template-rows: 0fr 13rem 1fr;
+    grid-template-rows: 0fr 10rem 1fr;
 }
 
 .grid {
@@ -155,4 +156,45 @@ input {
     height: 100%;
     width: 100%;
 }
+
+.sidebar {
+    background-color: lightblue;
+    padding: 1rem;
+}
+
+.sidebar-container {
+    grid-template-columns: 1fr 4fr;
+    align-self: start;
+    justify-self: start;
+    gap: 1rem 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.sidebar-container > img {
+    height: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h2,
+a {
+    justify-self: start;
+}
+
+#logo {
+    height: 4rem;
+}
+
+
+
+/* Dashboard svg height & width: 120% and the rest of the svg height & width are 70% */
 
