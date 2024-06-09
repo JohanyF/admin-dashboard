@@ -22,6 +22,8 @@ body {
 
 .header {
     box-shadow: 4px 4px 6px 0px rgba(51,51,51,0.8);
+    padding: 1rem 2rem;
+    gap: 1rem;
 }
 
 .features {
@@ -30,7 +32,8 @@ body {
 }
 
 .search-section {
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
 }
 
 input {
@@ -41,15 +44,16 @@ input {
     min-width: 36vw;
 }
 
-.profile-section,
-.btns {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+.profile-section {
+    justify-self: end;
+    gap: 2rem;
+    grid-template-columns: auto auto 1fr;
 }
 
 .btns {
-    gap: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: end;
 }
 
 .btn {
@@ -59,26 +63,40 @@ input {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .greeting {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     justify-self: start;
+    gap: 1rem;
+}
+
+.username-text {
+    font-size: 1.5rem;
 }
 
 .magnify {
-    max-height: 60%;
-    max-width: 60%;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .bell {
-    max-height: 60%;
-    max-width: 60%;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .account {
-    max-height: 80%;
-    max-width: 80%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.small-account {
+    height: 3rem;
+    width: 3rem;
 }
 
 .article {
