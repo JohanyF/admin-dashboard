@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+:root {
+    --article-background-color: #ededed;
+    --dark-background-color: #659ef9;
+}
+
 body {
     font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -80,6 +85,7 @@ input {
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
     padding: 2rem 2rem 2rem 1rem;
+    background-color: var(--article-background-color);
 }
 
 .card-container {
@@ -197,6 +203,7 @@ a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
+    color: black;
 }
 
 h2,
@@ -211,3 +218,15 @@ a {
 .mb {
     margin-bottom: 0.5rem;
 }
+
+.sidebar,
+.btn {
+    background-color: var(--dark-background-color);
+}
+
+.card,
+.announcement-container,
+.trending-container {
+    background-color: white;
+}
+
